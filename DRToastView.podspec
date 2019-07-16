@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DRToastView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DRToastView.'
+  s.summary          = 'A simple toast view'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,16 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Dean_F/DRToastView'
+  s.homepage         = 'https://github.com/DeanFs/DRToastView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Dean_F' => 'stone.feng1990@gmail.com' }
-  s.source           = { :git => 'https://github.com/Dean_F/DRToastView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/DeanFs/DRToastView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DRToastView/Classes/**/*'
+  s.resource = 'DRToastView/Classes/*.{xib}'
+  s.source_files = 'DRToastView/Classes/*.{h,m}'
   
   # s.resource_bundles = {
   #   'DRToastView' => ['DRToastView/Assets/*.png']
@@ -38,5 +39,8 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.dependency 'DRMacroDefines'
+  s.dependency 'JXExtension'
+
 end

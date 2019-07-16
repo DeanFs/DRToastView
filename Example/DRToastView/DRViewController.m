@@ -7,6 +7,7 @@
 //
 
 #import "DRViewController.h"
+#import <DRToastView/DRToastView.h>
 
 @interface DRViewController ()
 
@@ -24,6 +25,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [DRToastView showWithMessage:@"点击了屏幕" complete:nil];
 }
 
 @end

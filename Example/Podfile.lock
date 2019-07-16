@@ -1,0 +1,41 @@
+PODS:
+  - DRMacroDefines (0.1.2)
+  - DRToastView (0.1.0):
+    - DRMacroDefines
+    - JXExtension
+  - JXExtension (0.4.0):
+    - JXExtension/Category (= 0.4.0)
+    - JXExtension/Transition (= 0.4.0)
+    - JXExtension/View (= 0.4.0)
+    - SDVersion
+  - JXExtension/Category (0.4.0):
+    - SDVersion
+  - JXExtension/Transition (0.4.0):
+    - SDVersion
+  - JXExtension/View (0.4.0):
+    - JXExtension/Category
+    - SDVersion
+  - SDVersion (4.3.2)
+
+DEPENDENCIES:
+  - DRToastView (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DRMacroDefines
+    - JXExtension
+    - SDVersion
+
+EXTERNAL SOURCES:
+  DRToastView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DRMacroDefines: 58aa271bc1c4170fa09f4f33dcad18fc4f21a57e
+  DRToastView: f0019801a709f53071c59ba9d33286b1fbdd99e0
+  JXExtension: c625f6881ae43cb7bbf97d49c0b2202f8f1de898
+  SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
+
+PODFILE CHECKSUM: 03410bf0449e84c94296a7b33cb28e269b911962
+
+COCOAPODS: 1.6.1
