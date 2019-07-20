@@ -1,6 +1,6 @@
 PODS:
   - DRMacroDefines (0.1.2)
-  - DRToastView (0.1.0):
+  - DRToastView (0.1.1):
     - DRMacroDefines
     - JXExtension
   - JXExtension (0.4.0):
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DRMacroDefines: 58aa271bc1c4170fa09f4f33dcad18fc4f21a57e
-  DRToastView: f0019801a709f53071c59ba9d33286b1fbdd99e0
+  DRToastView: 3e7a5d8c66640ca6c618910c926425c9c0ab3954
   JXExtension: c625f6881ae43cb7bbf97d49c0b2202f8f1de898
   SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
 

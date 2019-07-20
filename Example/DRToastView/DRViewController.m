@@ -19,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [DRToastView setupBackgroundColor:[UIColor redColor] textColor:nil textFont:[UIFont systemFontOfSize:18]];
 }
 
 - (void)didReceiveMemoryWarning

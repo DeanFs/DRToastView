@@ -12,6 +12,10 @@ typedef void (^DRToastViewCompleteBlock)(BOOL isDelete);
 
 @interface DRToastView : UIView
 
++ (void)setupBackgroundColor:(UIColor *)backgroundColor
+                   textColor:(UIColor *)textColor
+                    textFont:(UIFont *)textFont;
+
 + (void)showWithMessage:(NSString *)message complete:(DRToastViewCompleteBlock)complete;
 
 // 可设置向上偏移的距离

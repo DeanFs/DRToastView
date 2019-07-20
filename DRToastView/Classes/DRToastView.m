@@ -10,6 +10,10 @@
 #import <JXExtension/JXExtension.h>
 #import <DRMacroDefines/DRMacroDefines.h>
 
+static UIColor *_backgroundColor;
+static UIColor *_textColor;
+static UIFont *_textFont;
+
 @interface DRToastView (){
     
 }
@@ -23,6 +27,14 @@
 @end
 
 @implementation DRToastView
+
++ (void)setupBackgroundColor:(UIColor *)backgroundColor
+                   textColor:(UIColor *)textColor
+                    textFont:(UIFont *)textFont {
+    _backgroundColor = backgroundColor;
+    _textColor = textColor;
+    _textFont = textFont;
+}
 
 + (void)showWithMessage:(NSString *)message complete:(DRToastViewCompleteBlock)complete{
     [self showWithMessage:message upOffset:0 complete:complete];
@@ -61,6 +73,20 @@
         kDR_SAFE_BLOCK(self.completeBlock, YES);
     }];
     [self.containerView popToDismiss];
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    if (_backgroundColor) {
+        self.containerView.backgroundColor = _backgroundColor;
+    }
+    if (_textColor) {
+        self.messageLabel.textColor = _textColor;
+    }
+    if (_textFont) {
+        self.messageLabel.font = _textFont;
+    }
 }
 
 @end

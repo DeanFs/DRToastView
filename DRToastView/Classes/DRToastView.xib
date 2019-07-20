@@ -17,16 +17,16 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-mO-AMn" customClass="JXAlertContainerView">
-                    <rect key="frame" x="118" y="312" width="139" height="43"/>
+                    <rect key="frame" x="128.5" y="314" width="118" height="39"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请先完成子任务" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYx-EU-q9R">
-                            <rect key="frame" x="17" y="11" width="105" height="21"/>
-                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                            <rect key="frame" x="17" y="11" width="84" height="17"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.30588235294117649" green="0.54509803921568623" blue="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.27450980392156865" green="0.35686274509803922" blue="0.53333333333333333" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="VYx-EU-q9R" firstAttribute="leading" secondItem="ewG-mO-AMn" secondAttribute="leading" constant="17" id="Jwc-fo-9Ir"/>
                         <constraint firstItem="VYx-EU-q9R" firstAttribute="top" secondItem="ewG-mO-AMn" secondAttribute="top" constant="11" id="pat-04-cAb"/>
